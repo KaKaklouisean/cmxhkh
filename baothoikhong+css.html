@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tôi yêu Chủ Nghĩa Xã Hội Khoa Học</title>
+    <style>
+        body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    background-image: url('https://images.cara.app/production/posts/cf345b3a-617f-4373-8d98-659c1c98860a/dancuquato-3G_MrWZFc0TcBkSVqsmOU-Kho-ng-Co-Tie-u-e-574_20250403181815.png?width=1920');
+    background-size: cover; 
+    background-position: center;
+    size: 200px;
+    
+}
+
+.timkiemthongtin {
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+}
+
+.nhaptimkiem {
+    width: 300px;         
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-right: 10px;  
+}
+
+.nut {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.timkiemthongtin button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.timkiemthongtin button[type="submit"]:active {
+    background-color: #87d3ff;
+   
+}
+
+.timkiemthongtin button[type="submit"]:focus {
+    outline: yellow;
+   
+}
+
+.mobai h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.thanbai p {
+    color: #000000;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+.thanbai {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+main {
+    flex: 3;
+}
+
+.tinhot {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.tinhot img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tinhot p {
+    font-size: 1em;
+}
+
+.tinhot a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.tinhot a:hover {
+    text-decoration: underline;
+}
+
+.noidung2 .tin {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.noidung2 .tin img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.noidung2 h2, .tin h3 {
+    margin-bottom: 10px;
+}
+
+.tin p {
+    margin-bottom: 10px;
+}
+
+.tin a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.tin a:hover {
+    text-decoration: underline;
+}
+aside {
+    flex: 1;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+aside ul {
+    list-style: circle;
+    margin-left: 10px;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    color: #007bff;
+}
+
+aside a:active {
+    color: rgb(66, 65, 65)
+}
+
+aside a:visited {
+    color: rgb(135, 46, 46)
+}
+
+aside a {
+    color: #333;
+    text-decoration: none;
+}
+
+video {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+}
+    
+footer p {
+    margin: 5px 0;
+
+ 
+}
+.chantrang1 iframe {
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    resize: vertical;
+}
+textarea:focus {
+    outline: 2px solid #007bff
+}
+
+form h3 {
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+aside button[type="submit"] {
+
+    width: 90px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    cursor: pointer;
+   
+}
+   
+aside button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+   
+   
+aside button[type="submit"]:focus {
+    outline: yellow;
+   
+}
+   
+aside button[type="submit"]:active {
+    background-color: #87d3ff;
+   
+}
+
+form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+}
+aside input[type="text"] {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #f4f4f4;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px 0 10px 0;
+        
+}
+        
+aside input[type="text"]:focus {
+        outline: 2px solid #007bff;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="mobai">
+            <h1>BÁO CHỦ NGHĨA XÃ HỘI KHOA HỌC</h1>
+            <p><em>"Đã ngừng cập nhật tin tức vì bị bồ đá</em></p>
+            <p><em>nhưng vẫn nhanh chóng - tiện lợi - bổ ích"</em></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Thế giới</a></li>
+                <li><a href="#">Kinh tế</a></li>
+                <li><a href="#">Thể thao</a></li>
+                <li><a href="#">Công nghệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="timkiemthongtin">
+        <input type="text" placeholder="Nhập từ khóa..." class="nhaptimkiem">
+        <button type="submit" class="nut">Tìm</button>
+    </div> 
+    <div class="thanbai">
+        <main>
+            <div class="noidung1">
+                <div class="tinhot">
+                    <img src="https://qptd.vn/upload/2001606/fck/1(11).png" alt="30/4" title="30/4">
+                    <h2> VIỆT NAM CHÍNH THỨC BƯỚC VÀO KỶ NGUYÊN CHỦ NGHĨA XÃ HỘI: KỲ TÍCH TỪ SỨC MẠNH LIÊN MINH GIAI CẤP! </h2>
+                    <p>Ngày đăng: 30/4/2045 | Tác giả: Cái Chết Nhiệt Của Vũ Trụ </p>
+                    <p>Trong không khí hân hoan của hàng triệu trái tim, Việt Nam đã chính thức tuyên bố hoàn thành toàn diện thời kỳ quá độ, hiên ngang bước sang trang sử mới: Hình thái Chủ nghĩa Xã hội viên mãn, phồn vinh và hạnh phúc...</p>
+                    <a href="#">Đọc thêm</a>
+                </div>
+            </div>
+            <div class="noidung2">
+                 <div class="tin">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiUQwVBtMjthFghl8Vl0famYKpwi9-RiZYJtPP4KSdkHYUMslfVu3DhdViBFqZkVsV2e1RSzrmzWomYOYuqrm5djvWgHS8xl-7Z_zxml8GkuB4vFwWMPjHdpvL5skU9OG2VdbI/s320/DM+moon.jpg" alt="Sivi" title="Sivi">
+                    <h3>NÓNG: Cuộc Phỏng Vấn Gây Bão Của Sinh Viên Bị Các Giai Cấp Nghi Ngờ Kiến Thức</h3>
+                    <p>Ngày đăng: 15/10/2007 | Tác giả: Nữ Hoàng Trùng Quốc </p>
+                    <p>Trong cuộc phỏng vấn mới đây của Đài Truyền hình CLC50B. Có một số ý kiến trái chiều. Trong đó, có sinh viên bị các giai cấp nghi ngờ, đánh giá thấp khả năng khắc họa bằng ngôn ngữ hình ảnh. Vì vậy, sinh viên ấy đã quyết định Ăn cắp mặt trăng...</p>
+                    <a href="#">Đọc thêm</a>
+                </div>
+                <div class="tin">
+                    <img src="https://petruskyaus.net/wp-content/uploads/2017/04/nam-gac-tay-len-tran-01.jpg" alt="Li" title="Li">
+                    <h3>Vắt Tay Lên Trán Nghĩ Cả Đêm Không Ra: Vì Sao Hôm Ấy Công, Nông, Trí Lại Cãi Nhau?</h3>
+                    <p>Ngày đăng: 15/11/2007 | Tác giả: Lị Ba Chê </p>
+                    <p>Lý do được cho rằng là vì hội chứng flex cái tôi giai cấp quá cao. Vào ngày hôm ấy, khi bước ra thị trường lao động, ai cũng nắm trong tay quả CV trên trời để tự tin mình là cái rốn của vũ trụ...</p>
+                    <a href="#">Đọc thêm</a>
+                </div>
+                <div class="tin">
+                    <img src="https://vcdn1-dulich.vnecdn.net/2019/04/19/cuidau2-1555665595-6395-1555666365.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=UxmblNoHuTZiH9XE-12EmA" alt="Hellothu" title="Hellothu">
+                    <h3>Công Đã Hạ Cái Tôi Xuống, Chấp Nhận Liên Minh: Đôi Lời Cần Nói</h3>
+                    <p>Ngày đăng: 30/1/2007 | Tác giả: Trí Đẹp Trai </p>
+                    <p>Công giải bày trong buổi phỏng vấn: "Sau những giờ phút bốc đồng đòi làm vua của các nghề, hôm nay tôi xin phép hạ cái tôi cao hơn tháp Bitexco này xuống để có đôi lời trải lòng thẳng thắn với chị Nông và bạn Trí...</p>
+                    <a href="#">Đọc thêm</a>
+                </div>
+                <div class="tin">
+                    <img src="https://www.hcmulaw.edu.vn/Resources/Images/SubDomain/HomePage/2024.03.19/ẢNH%205.jpg" alt="Hải" title="Hải">
+                    <h3>SỐC: Phát Biểu Của Tiến Sĩ Nguyễn Thanh Hải Về Liên Minh Giai Cấp</h3>
+                    <p>Ngày đăng: 4/6/2026 | Tác giả: Liên Minh Giai Cấp </p>
+                    <p>Trong phiên thảo luận chuyên đề về "Liên minh giai cấp, tầng lớp trong thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam" vừa diễn ra tại lớp CLC50B, TS. Nguyễn Thanh Hải đã bất ngờ đưa ra một tuyên bố gây tranh cãi...</p>
+                    <a href="#">Đọc thêm</a>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div>
+            <h2><b>TIN NỔI BẬT</b></h2>
+            <ul>
+                <li><a href="#">Các giáo sư thay nhau đưa ý kiến về liên minh giai cấp</a></li>
+                <li><a href="#">Chủ nghĩa kinh tế chính trị khoa học mác lê nin xã hội</a></li>
+                <li><a href="#">Anh Doanh chị Nữ nói gì sau khi bỏ lỡ ngày đàm phán</a></li>
+                <li><a href="#">5 sinh viên nói gì khi gặp gỡ liên minh giai cấp</a></li>
+            </ul>
+            </div>
+        <div>
+            <h2><b>VIDEO</b></h2>
+            <ul>
+            <iframe src="https://www.youtube.com/embed/OrDB4jpA1g8?si=qvwsXBPBsNGlw09o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <li><a href="#">Đôi trai tài gái sắc yêu nhau nồng thắm</a></li>
+            <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls>Trình duyệt của bạn có thể sẽ không tải được video</video>
+            <li><a href="#">Trấn Thành tuyên bố lấn sân sang lĩnh vực điện ảnh hoạt hình</a></li>
+            <video src="https://cdn2.tuoitre.vn/471584752817336320/2025/3/1/robot-17408250322671571552496.gif.mp4" controls>Trình duyệt của bạn có thể sẽ không tải được video</video>
+            <li><a href="#">Liệu nhân loại đã có thể vượt qua được sự tiến bộ của AI?</a></li>
+            <iframe src="https://www.youtube.com/embed/EMG5tRgyrR8" title="Trước Khi Em Tồn Tại (Peter Griffin Cover)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <li><a href="#">Gu nhạc của thế hệ trẻ ngày nay</a></li>
+            </ul>
+        </div>
+        <br>
+            <form method="POST">
+                <h2>Khảo Sát Độc Giả</h2>
+                <label for="name">Tên của bạn:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email (Tùy chọn):</label>
+                <input type="text" id="email" name="email">
+                <br>
+                <label>Đánh giá chất lượng đầu báo:</label>
+                <div>
+                    <label><input type="radio" name="danhgia" value="1">1</label>
+                    <label><input type="radio" name="danhgia" value="2">2</label>
+                    <label><input type="radio" name="danhgia" value="3">3</label>
+                    <label><input type="radio" name="danhgia" value="4">4</label>
+                    <label><input type="radio" name="danhgia" value="5">5</label>
+                </div>
+                    <h2> Mời bạn đóng góp ý kiến:</h2>
+                    <textarea id="ykien" name="ykien" rows="10" cols="30"></textarea><br>
+                    <button type="submit">Gửi</button>
+            </form>
+            </div>
+        </aside>
+    </div>
+    <footer>
+    <div class="chantrang1">
+            <h3> THÔNG TIN LIÊN LẠC </h3>
+        <p>Địa chỉ: Đại học Luật Thành phố Hồ Chí Minh
+        Số 02, Nguyễn Tất Thành, phường Xóm Chiếu, Tp. Hồ Chí Minh.</p>
+        <p>Liên hệ: Chunghiaxahoikhoahockinhtechinhtritriethocmaclenin@gmail.com</p>
+        <p>Hotline: 0000000001</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5713572058658!2d106.70310027471321!3d10.76748105935932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f41f8d0bb9f%3A0x888dfc345b5e0461!2sLaw%20University%20of%20HCMC!5e0!3m2!1sca!2s!4v1780231673847!5m2!1sca!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>© 2025 Báo Chủ Nghĩa Xã Hội Khoa Học. Bản quyền được bảo lưu</p>
+        </div>
+    </footer>
+</body>
+</html>
